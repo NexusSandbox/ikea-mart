@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <name>${artifactId}</name>
-    <description>Library for translating and storing data direct from a data source.</description>
+    <description>Library for translating, storing, and displaying data direct from a data source.</description>
     <inceptionYear>2017</inceptionYear>
 
     <properties>
@@ -19,10 +19,28 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.6</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>20.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
             <groupId>eli.veritas</groupId>
             <artifactId>veritas</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
